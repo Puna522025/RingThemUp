@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ring Them Up</string>
+    <string name="service_provider">* Please enter the phone number for which you want to change the ringing settings. You may be charged for this SMS according to \nyour service provider.</string>
+    <string name="disclaimer">**SMS should only be sent in case of emergency and should not be misused. Images used belong to their respective owners.</string>
+    <string name="sendSMS">Ring them up - Hi, you were not picking up the phone and we were worried sick. So just turned your ringtone volume up a bit.</string>
+    <string name="sendWhatsappSMS">Hi, you were not picking up the phone and we were worried sick. So just turned your ringtone volume up a bit. To download click- http://play.google.com/store/apps/details?id=sample.myapplication</string>
+    <string name="share">Hey, Please download this app. This will help me track you if you forgot to remove your phone from silent mode --</string>
+</resources>

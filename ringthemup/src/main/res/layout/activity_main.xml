@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#E6E6E6">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_new">
+
+    </include>
+
+    <ImageView
+        android:id="@+id/contactsImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/contactLabel"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/contactLabel"
+        android:src="@drawable/contacts_one" />
+
+
+    <TextView
+        android:id="@+id/shareLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:text="Share with your friends"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_provider"
+        android:textStyle="italic"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/contactLabel"
+        android:layout_alignLeft="@+id/disclaimer"
+        android:layout_alignStart="@+id/disclaimer" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contactLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/WhatsappLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp">
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:digits="0123456789"
+            android:hint="Enter the Phone Number"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_below="@+id/WhatsappLabel"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="12dp"
+    android:id="@+id/rlAnimation"
+    android:layout_alignRight="@+id/alert"
+    android:layout_alignEnd="@+id/alert"
+    android:layout_above="@+id/alert" >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/imageArrow" />
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/ORLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WhatsappLabel"
+        android:text="OR"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/WhatsappLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/appIcon"
+        android:layout_alignLeft="@+id/contactLabel"
+        android:layout_alignStart="@+id/contactLabel"
+        android:text="Send it via Whatsapp "
+        android:textSize="17sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        ads:adUnitId="ca-app-pub-6529573734445559/4752041427">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/whatsappImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/whatsapp_two"
+        android:layout_below="@+id/appIcon"
+        android:layout_alignLeft="@+id/contactsImage"
+        android:layout_alignStart="@+id/contactsImage" />
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disclaimer"
+        android:textStyle="italic"
+        android:textSize="10sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/shareImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/share"
+        android:layout_alignBottom="@+id/shareLabel"
+        android:layout_toRightOf="@+id/contactsImage"
+        android:layout_toEndOf="@+id/contactsImage" />
+
+
+</RelativeLayout>
